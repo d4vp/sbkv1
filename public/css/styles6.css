@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(1px);
+}
+
+.card{
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-top{
+    padding: 30px;
+    background-color: #fff;
+    background: linear-gradient(45deg, #5b9ff8, #0055d4);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.card-top .social-icons{
+    margin: 20px 0;
+    display: flex;
+}
+
+.social-icons a{
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.social-icons i{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.685);
+    transition: 0.3s;
+}
+
+.social-icons a:hover i{
+    color: #fff;
+}
+
+.top-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.top-icons i{
+    font-size: 27px;
+    color: #fff;
+}
+
+.card-top img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 4px solid #fff;
+}
+
+.card-top .name{
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.card-top .occupation{
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 14px;
+}
+
+
+.card-bottom{
+    padding: 50px 20px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-bottom .btn{
+    padding: 10px 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #3c72e7;
+    text-decoration: none;
+    position: absolute;
+    top: -20px;
+    box-shadow: 0 2px 15px rgba(60, 140, 231, 0.3);
+    transition: 0.5s;
+}
+
+.card-bottom .btn:hover{
+    padding: 10px 60px;
+}
+
+.card-bottom div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-bottom div p{
+    display: block;
+    margin-top: 10px;
+    color: rgba(0,0,0,0.3);
+}
+
+.card-bottom div i{
+    font-size: 24px;
+    color: #999;
+}

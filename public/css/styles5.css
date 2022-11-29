@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
+
+/* 
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: #000;
+    scroll-behavior: smooth;
+} */
+
+
+
+
+/* a {
+    text-decoration: none;
+} */
+
+/* 
+ .container {
+    width: 100%;
+    max-width: 122.5rem;
+    margin:  0 auto;
+    padding: 0 2.4rem;
+} 
+ */
+/*Hero*/
+
+
+.hero {
+    width: 100%;
+    height: 70vh;
+   /*  background-color: #238dbe ; */
+    background: url("../img/20.png");
+ 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.h2-sub {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #3bcc75;
+    font-weight: 600;
+    line-height: .4;
+}
+
+.fil {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.head {
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .5rem;
+}
+
+.circle {
+    font-size: 1.5rem;
+    color: #3bcc75;
+    margin: 0 1.6rem;
+}
+
+.he-des h5 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: -2px;
+}
+
+.cta-btn {
+    font-size: 1.1rem;
+    background-color: #ffc845;
+    padding: 1.5rem 3rem;
+    color: #fff;
+    border-radius: .4rem;
+}
+.cta-btn:hover,
+.cta-btn:focus {
+    color: #fff;
+    background-color: #3bcc75;
+}
+
+
+.global {
+    text-align: center;
+   /*  margin-top: 3.9rem; */
+}
+
+.dis-sto .global {
+    margin-top: 6.9rem;
+}
+
+.global .circle {
+    color: #3bcc75;
+    margin: 2.4rem 0;
+}
+
+.hea-dark {
+    color: #252525;
+    letter-spacing: .7rem;
+    margin-right: -.7rem;
+}
+
+.global .h2-sub {
+    letter-spacing: -1px;
+    line-height: .42;
+}
+
+.res-info {
+    text-align: center;
+}
+
+.res-des {
+    margin-bottom: 3rem;
+}
+
+.res-des p {
+    line-height: 1.6;
+    margin-bottom: 2.4rem
+}
+
+
+/*menu*/
+
+.taste {
+  /*   background: url("../img/img-2.jpg") center no-repeat; */
+  background-color: rgb(27, 81, 112);
+    background-size: cover;
+}
+
+.bt {
+  /*   min-height: 65vh; */
+    display: flex;
+    align-items: center;
+}
+
+
+/*platillos*/
+
+.image-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.disco .res-des {
+    padding-top: 3rem;
+    margin-bottom: 0;
+}
+
+.pb {
+   /*  background: url("../img/img-3.jpg") center no-repeat; */
+   background-color: rgb(27, 81, 112);
+    background-size: cover;
+}
+
+
+
+.social-icons {
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 2rem;
+    color: #3bcc75;
+    padding: .8rem 2rem;
+    
+}
+
+.social-icons i:hover,
+.social-icons i:focus {
+    color: #ffc845;
+}
+
+.news-form {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.news-input {
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem;
+    border-radius: .4rem;
+}
+.news-btn {
+    background: transparent;
+    border: none;
+    color: #252525;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1px .6rem;
+    position: absolute;
+    top: 30%;
+    margin-left: 20.5rem;
+}
+
+@media screen and (min-width: 900px) {
+
+   /*  section {
+        padding: 7.9rem;
+    } */
+
+    section {
+        padding: 1.9rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav-list {
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        padding: 0;
+        justify-content: initial;
+        flex-direction: row;
+        transform: initial;
+        transition: initial;
+    }
+
+    .nav-item {
+        margin: 0 2.4rem;
+    }
+
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+
+    .nav-link {
+       
+    }
+
+    .active {
+        position: relative;
+    }
+    .active::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        left: 0;
+        bottom: -3px;
+    }
+
+    .h2-sub {
+        font-size: 3rem;
+    }
+
+    .fil {
+        font-size: 3rem;
+    }
+    .head {
+        font-size: 4.7rem;
+        letter-spacing: .8rem;
+    }
+
+    .res-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .res-info > div {
+        flex: 1;
+    }
+
+    .pad-rig {
+        padding-right: 7rem;
+    }
+
+    .footer-content {
+        max-width: 77.5rem;
+        margin: auto;
+    }
+
+    .footer-content-about {
+        max-width: 51.3rem;
+        margin:  0 auto 5.4rem;
+    }
+
+    .footer-div{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-media,
+    .news-form {
+        width: 100%;
+        max-width: 27.3rem;
+        margin: 0 1rem;
+    }
+
+   .news-btn {
+       margin-left: 7.5rem;
+   }
+    
+}
+
+
+#subir__arriba{
+    width: 50px;
+    height: 50px;
+    background: #ffc845;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    position: fixed;
+    bottom: 20px;
+    cursor: pointer;
+    display: none;
+    }
+    
+    html{
+    scroll-behavior: smooth;
+    }
+
+form{
+        background: #ececec;
+
+        width: 640px;
+        max-width: 97%;
+        border-radius: 4px;
+        padding: 55px 30px;
+      }
+      
+      form .title h2{
+        letter-spacing: 6px;
+        border-bottom: 1px solid white;
+        display: inline-block;
+        padding-bottom: 8px;
+        margin-bottom: 32px;
+      }
+      
+      form .half{
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      form .half .item{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+        width: 48%;
+      }
+      
+      form label{
+        display: block;
+        font-size: 13px;
+        letter-spacing: 3.5px;
+        margin-bottom: 16px;
+      }
+      
+      form .half .item input{
+        border-radius: 4px;
+        border: 1px solid white;
+        outline: 0;
+        padding: 16px;
+        width: 100%;
+        height: 44px;
+        background: white;
+        font-size: 17px;
+      }
+      
+      form .full{
+        margin-bottom: 24px;
+      }
+      
+      form .full textarea{
+        background: white;
+        border-radius: 4px;
+        border: 1px solid white;
+        outline: 0;
+        padding: 12px 16px;
+        width: 100%;
+        height: 200px;
+        font-size: 17px;
+      }
+      
+      form .action{
+        margin-bottom: 32px;
+      }
+      
+      form .action input{
+        background: transparent;
+        border-radius: 4px;
+        border: 1px solid white;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 600;
+        height: 44px;
+        letter-spacing: 3px;
+        outline: 0;
+        padding: 0 20px 0 22px;
+        margin-right: 10px;
+      }
+      
+      form .action input[type="submit"]{
+        background: white;
+        color: black;
+      }
+      
+      form .icons a{
+        border: 1px solid white;
+        border-radius: 50%;
+        line-height: 36px;
+        text-align: center;
+        font-weight: 600;
+        width: 38px;
+        margin-right: 10px;
+      }
+      
+      form .half .item input:focus, form .full textarea:focus, form .action input[type="reset"]:hover, form .icons a:hover{
+        background: rgba(255,255,255,0.075);
+      }
+      
+      @media (max-width: 480px){
+        form .half{
+          flex-direction: column;
+        }
+        form .half .item{
+          width: 100%;
+        }
+        form .action{
+          display: flex;
+          flex-direction: column;
+        }
+        form .action input{
+          margin-bottom: 10px;
+          width: 100%;
+        }
+      }
